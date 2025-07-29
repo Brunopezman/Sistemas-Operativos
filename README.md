@@ -34,13 +34,11 @@ Implementación de un sistema de archivos simple, con:
 
 ## 🚀 Cómo correr el proyecto
 
+Cada componente del proyecto (shell, scheduler, filesystem) incluye su propio `Makefile` con las instrucciones necesarias para compilar y ejecutar.
+
+Para más detalles, consultá el `README` o los comentarios dentro del `Makefile` correspondiente en cada carpeta:
+
 ```bash
-# Clonar el repositorio
-git clone https://github.com/tuusuario/sistemas-operativos-proyecto.git
-cd sistemas-operativos-proyecto
-
-# Construir la imagen de Docker
-docker build -t so-proyecto .
-
-# Ejecutar el contenedor
-docker run -it so-proyecto
+cd shell         # o scheduler, filesystem
+make             # compila el proyecto
+make run         # (si está definido) ejecuta la implementación
